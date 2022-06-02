@@ -2,9 +2,9 @@
 
 /**
 
- * main - main block
+ * main - entry point
 
- * Return: 0
+ * Return: 0 after printing the function
 
  */
 
