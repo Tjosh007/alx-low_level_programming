@@ -1,48 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - main block
- * Description: Write a program that prints all possible
- * different combinations of two digits
+ * main - create 2 pairs of number
  * Return: 0
  */
 int main(void)
 {
-int c;
-int d;
-int e;
-int f = 0;
-while (f < 10)
+int i, j;
+for (i = 0; i <= 99; i++)
 {
-e = 0;
-while (e < 10)
+for (j = i; j <= 99; j++)
 {
-d = 0;
-while (d < 10)
+if (j != i)
 {
-c = 0;
-while (c < 10)
-{
-if (!(f == c && e == d))
-{
-putchar('0' + f);
-putchar('0' + e);
+putchar(i / 10 + 48);
+putchar(i % 10 + 48);
 putchar(' ');
-putchar('0' + d);
-putchar('0' + c);
-if (!(f + e == 18 && c + d == 17 && d == 9))
+putchar(j / 10 + 48);
+putchar(j % 10 + 48);
+if (i * 100 + j != 9899)
 {
 putchar(',');
 putchar(' ');
 }
 }
-c++;
 }
-d++;
-}
-e++;
-}
-f++;
 }
 putchar('\n');
 return (0);
