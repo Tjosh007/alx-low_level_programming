@@ -1,1 +1,1 @@
-A project titled alx-low_level_programming, based on an introduction to low level programming with C
+This project is based on performing various tasks on  Pointers, arrays and strings in C-programming
