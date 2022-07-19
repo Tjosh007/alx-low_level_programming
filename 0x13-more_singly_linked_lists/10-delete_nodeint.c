@@ -16,7 +16,7 @@ return (-1);
 if (index == 0)
 {
 *head = (*head)->next;
- free(temp);
+free(temp);
 return (1);
 }
 while (i < index - 1)
